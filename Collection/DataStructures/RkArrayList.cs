@@ -226,22 +226,6 @@ namespace Collection
             return tmp;
         }
 
-        static string ArrayToString(Array array)
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.Append("[");
-            if (array.Length > 0)
-            {
-                sb.Append(array.GetValue(0));
-            }
-            for (int i = 1; i < array.Length; ++i)
-            {
-                sb.AppendFormat(",{0}", array.GetValue(i));
-            }
-            sb.Append("]");
-            return sb.ToString();
-        }
-
         // Properties
         public int Capacity
         {
